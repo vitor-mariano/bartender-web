@@ -22,7 +22,8 @@ const OrderPage: NextPage<Props> = ({ items }) => {
   const router = useRouter();
   const orderId = router.query.orderId as string;
   const total = useMemo(
-    () => items.reduce((total, { price }) => total + price, 0),
+    () =>
+      items.reduce((total, { price, quantity }) => total + price * quantity, 0),
     [items]
   );
 
