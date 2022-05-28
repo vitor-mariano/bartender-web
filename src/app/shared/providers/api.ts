@@ -1,8 +1,8 @@
 import axios from "axios";
-import { getConfig } from "src/app/shared/config";
+import { getPublicConfig } from "src/app/shared/config";
 
 export function getAxiosInstance(accessToken?: string) {
-  const config = getConfig();
+  const config = getPublicConfig();
 
   const axiosInstance = axios.create({
     baseURL: config.api.url,

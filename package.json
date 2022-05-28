@@ -17,12 +17,14 @@
     "@mui/material": "^5.8.0",
     "axios": "^0.27.2",
     "next": "12.1.6",
+    "ramda": "^0.28.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "17.0.35",
+    "@types/ramda": "^0.28.13",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.4",
     "eslint": "8.16.0",
