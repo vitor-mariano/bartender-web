@@ -1,15 +1,6 @@
 import { getSession, withPageAuthRequired } from "@auth0/nextjs-auth0";
-import { OrderItem } from "src/app/order/models";
+import { Order } from "src/app/order/models";
 import { getAxiosInstance } from "src/app/shared/providers/api";
-
-interface Order {
-  orderId: string;
-  items: OrderItem[];
-}
-
-export interface Props {
-  orders: Order[];
-}
 
 interface OrdersResponse {
   orders: Order[];

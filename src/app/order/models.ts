@@ -4,3 +4,8 @@ export interface OrderItem {
   quantity: number;
   delivered: boolean;
 }
+
+export interface Order {
+  orderId: string;
+  items: OrderItem[];
+}
